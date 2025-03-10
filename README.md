@@ -67,3 +67,29 @@ Manter-se atento a pontos fracos na segurança de um serviço é critico para ev
 Local zones podem ser utilizadas para abrigar acesso a serviços AWS em lugares distantes das regiões de grande 
 densidade populacional e tecnológica.
 
+# Aula 10/03/2025
+
+## AWS shared responsibility model
+
+Quando conectado com o servidor EC2, a infraestrutura global é de responsabilidade da AWS, no entanto, em caso
+de violação da segurança do servidor, a culpa é inteiramente da equipe que integrou o servidor à rede AWS.
+
+## Server side Encryption
+
+- SSE-C é uma forma de encriptação onde o usuário da AWS envia a chave de encriptação com o servidor para a rede.
+- SSE-S3: é o modelo padrão para criptógrafar conteúdo da AWS, onde a AWS fornece a chave de encriptação.
+
+## Pilares do design de segurança
+
+- Implemente uma forte segurança de identidade
+- Proteger dados em trânsito e descanso (HTTPS)
+- Afastar as pessoas do banco de dados
+- Mantenha a rastreabilidade dos dados
+- Prepare-se para eventos de segurança (ter uma equipe de segurança 24/7)
+- Automatize as melhores praticas de segurança
+
+## Política de Permissões para o usuário
+
+Autenticidade pode ser garantida caso o servidor saiba 3 tópicos sobre o usuário: o que sabe, o que é e o que tem.
+
+
