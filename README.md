@@ -92,4 +92,31 @@ de violação da segurança do servidor, a culpa é inteiramente da equipe que i
 
 Autenticidade pode ser garantida caso o servidor saiba 3 tópicos sobre o usuário: o que sabe, o que é e o que tem.
 
+# Aula 13/03/25
 
+## AWS configure
+
+#### PowerShell
+- ~aws configure
+- Access key
+- Secret access key
+- us-east-1
+- json
+
+- cd .aws
+- cat ./aws/credential
+- aws ec2 describe-instances
+
+## Grupos de usuários
+
+Quando temos um servidor com poucos membros, é possível delimitar as permissões para cada usuário individualmente,
+mas quando há um quantidade muito elevada, é necessário a utilização de grupos de usuários, possibilitando
+definir permissões para cada grupo.
+
+## Notas
+
+Habilitar MFA
+
+## IMA roles
+
+As 'roles' definem quais usuários podem assumir uma função determinada.
