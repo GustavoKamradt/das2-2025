@@ -34,8 +34,8 @@ situações como, por exemplo, a queda de um servidor.
 ## Recursos são descartáveis
 
 Uma vez que os recursos se tornam descartáveis, esses podem ser substituídos por outros,
-Por exemplo: digamos que o servidor da empresa caiu, caso haja backups do banco de dados,
-basta dar reboot no servidor com um backup.
+Por exemplo: digamos que o servidor da empresa caiu, caso haja 'backups' do banco de dados,
+basta dar 'reboot' no servidor com um 'backup'.
 
 Outra alternativa é a possibilidade de um bando de dados secundário, que entra em ação
 assim que o banco de dados principal para de funcionar.
@@ -43,7 +43,7 @@ assim que o banco de dados principal para de funcionar.
 ## Crie serviços, não servidores
 
 Soluções serverless ou containers, como o S3, evitam a responsabilidade de cuidar diretamente de um 
-servidor, uma vez que os dados estariam rodando em uma nuvem.
+servidor, uma vez que os dados estariam a rodar numa nuvem.
 
 ## NoSQL
 
@@ -79,7 +79,7 @@ de violação da segurança do servidor, a culpa é inteiramente da equipe que i
 - SSE-C é uma forma de encriptação onde o usuário da AWS envia a chave de encriptação com o servidor para a rede.
 - SSE-S3: é o modelo padrão para criptógrafar conteúdo da AWS, onde a AWS fornece a chave de encriptação.
 
-## Pilares do design de segurança
+## Pilares do 'design' de segurança
 
 - Implemente uma forte segurança de identidade
 - Proteger dados em trânsito e descanso (HTTPS)
@@ -115,8 +115,44 @@ definir permissões para cada grupo.
 
 ## Notas
 
+- Princípio de privilégio mínimo: conceda ao usuário apenas o necessário para fazer a sua função, nada a mais, nada a menos.
 Habilitar MFA
 
 ## IMA roles
 
-As 'roles' definem quais usuários podem assumir uma função determinada.
+As 'roles' definem quais usuários podem assumir uma função determinada via uma credencial temporária.
+
+# Aula 17/03
+
+## Role-Based Access Control (RBAC)
+
+Sistema que permite a utilização de 'roles' para simplificar a segurança e 
+facilitar a gestão de permissões.
+
+## Identity based policies
+
+Política de segurança linkada a um usuário, 
+
+## Resource based policies
+
+Política de segurança linkada a recursos, ou seja, e3 sq, etc. pode ser usada para criar recursos como buckets, 
+tornando o acesso mais granular.
+
+## Determining permissions at time of request
+
+Quando o ocorre uma requisição da API na aws por um usuário, o IMA é responsável por identificar as permissões daquele usuário,
+impedindo o acesso do usuário caso o mesmo não tenha as permissões necessárias. As permissões também podem ser negadas,
+mesmo o usuário tem permissão para executar uma função, caso os parameter estabelecidos para que a permissão seja efetiva
+sejam violados
+
+## Tipos de armazenamento
+
+- Block storage (EBS): Os dados são armazenados num dispositivo por meio de blocos com tamanho fixo.
+- File storage (EFS): Os dados são armazenados numa estrutura hierárquica
+- Object storage (s3): Os dados são armazenadas como objetos baseados em atributos e metadados.
+
+## AMAZON s3
+
+- O Amazon s3 possui um armazenamento de até 3TB.
+- Armazena documentos como objetos em bucket que você define.
+- todo o objeto armazenado no s3 tem uma URL, o que não quer dizer que terá acesso a eles.
