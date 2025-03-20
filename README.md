@@ -153,6 +153,30 @@ sejam violados
 
 ## AMAZON s3
 
-- O Amazon s3 possui um armazenamento de até 3TB.
+- O Amazon s3 possui um armazenamento de até 5TB para cada objeto.
 - Armazena documentos como objetos em bucket que você define.
 - todo o objeto armazenado no s3 tem uma URL, o que não quer dizer que terá acesso a eles.
+- Chance minima de perder objetos, devido à criação de 'backups' automáticos.
+- armazena dados que podem ser usados para análises.
+- Dá suporte com 'backups' e recuperação de desastres.
+- é possível separar um objeto em objetos menores e dar 'upload' para o servidor de forma fragmentada.
+- Provem segurança na transferência de arquivos, mesmo por longas distâncias.
+- Não é possível alterar objetos na S3, caso seja necessário, deve-se baixar o arquivo, alterá-lo e então dar reupload no arquivo
+
+# Aula 20/03/25
+
+## AWS Transfer Family
+
+O transfer Family é um serviço que serve para facilitar a transferencia de dados ao S3, podendo usar 
+protocolos FTP, FTPS e SFTP. Essa função é principalmente utilizada para evitar mudanças na 
+infraestrutura do servidor.
+
+## Classes de armazenamento de objetos
+
+- S3 Standard: Tem 'uploads' mais baratos, porém o preço de armazenamento é caro.
+- S3 Intelligent-Tiering: Move os arquivos entre os modelos disponíveis conforme a frequência de acessos.
+- S3 Standard-IA: ideal para objetos que não serão utilizados com tanta frequência.
+- S3 One-zone-IA: ainda mais barato que o Standard-IA, porém mais devagar.
+- S3 glacier Deep Arquive: armazenamento mais barato, porém é extremamente lento para movimentar os dados salvos aqui.
+- S3 glacier Instant Retrieval: pouco mais caro que o Deep Archive, porém o 'download' de objetos é instantâneo.
+- S3 outpost: Gera uma nuvem privada ao cliente, porém perda a elasticidade da rede AWS.
