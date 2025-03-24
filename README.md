@@ -179,4 +179,20 @@ infraestrutura do servidor.
 - S3 One-zone-IA: ainda mais barato que o Standard-IA, porém mais devagar.
 - S3 glacier Deep Arquive: armazenamento mais barato, porém é extremamente lento para movimentar os dados salvos aqui.
 - S3 glacier Instant Retrieval: pouco mais caro que o Deep Archive, porém o 'download' de objetos é instantâneo.
-- S3 outpost: Gera uma nuvem privada ao cliente, porém perda a elasticidade da rede AWS.
+- S3 outpost: gera uma nuvem privada ao cliente, porém perda a elasticidade da rede AWS.
+
+# Aula 24/03/25
+
+## S3 lifecycle
+
+O S3 lifecycle refere-se a ações que Amazon AWS aplica para um grupo de objeto. Ações como a transitar um objeto entre 
+classes de armazenamento ou definição de data de expiração, dificilmente podem ser alteradas no futuro ou custarão caríssimo.
+
+## Versioning
+
+É uma função que lhe permite salvar várias versões de um mesmo objeto, facilitando a realização de recuperação de dados
+ou reverter ações, uma vez que desabilitando essa função, o objeto pode ser perdido para sempre.
+
+## Cors
+
+É recurso de segurança suportado pelo Amazon AWS, que permite definir restrições para operações HTTPs vindas de outros sítes.
