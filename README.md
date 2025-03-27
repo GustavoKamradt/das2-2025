@@ -196,3 +196,16 @@ ou reverter ações, uma vez que desabilitando essa função, o objeto pode ser 
 ## Cors
 
 É recurso de segurança suportado pelo Amazon AWS, que permite definir restrições para operações HTTPs vindas de outros sítes.
+
+# Aula 27/03/25
+
+## Cuidados
+
+- cautela ao expor seus buckets na internet.
+- usar pelo menos o servidor side encryption com o S3
+- considerar qual região faz mais sentido a ser usada, considerando o custo e agilidade do acesso aos dados.
+
+## S3 Inventory
+
+o S3 Inventory auxilia a administração de espaço em seus armazementos de dados, Acelerando o 'workflow' da sua equipe.
+
