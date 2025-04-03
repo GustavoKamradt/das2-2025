@@ -207,5 +207,38 @@ ou reverter ações, uma vez que desabilitando essa função, o objeto pode ser 
 
 ## S3 Inventory
 
-o S3 Inventory auxilia a administração de espaço em seus armazementos de dados, Acelerando o 'workflow' da sua equipe.
+O S3 Inventory auxilia a administração de espaço nos seus armazementos de dados, acelerando o 'workflow' da sua equipe.
 
+# Aula 03/04/25
+
+## categorias diferentes de Compute Service
+
+Existem vários serviços oferecido pela AWS, como a possibilidade de criar maquinas virtuais, containers, funções serverless, etc.
+por exemplo, o ec2 instance é uma máquina virtual que pode ser criada com o sistema operacional desejado, enquanto o ECS é um 
+serviço de container que pode ser utilizado para criar containers com a linguagem de programação desejada.
+
+## Amazon AMI
+
+A amazon AMI(Amazon machine image) é uma imagem de máquina virtual que pode ser utilizada para criar instâncias EC2, com o sistema 
+operacional desejado. A AMI pode ser criada com o sistema operacional desejado, além de outras configurações como o tipo de 
+armazenamento, etc. Não só isso, mas também tem a capacidade ser criada a partir de uma instância EC2 existente ou de uma imagem 
+de máquina virtual. A partir da imagem, o usuário é capaz de compartilhar a AMI com outros usuários, permitindo que eles criem 
+instâncias EC2 com a mesma configuração.
+
+## Amazon EC2 instance
+
+O Amazon EC2 é um serviço que simplifica a criação, o gerenciamento e a escalabilidade de AMIs. Esse automatiza o processo de 
+atualização das AMIs, tornando o processo mais rápido e eficiente. Além disso, o EC2 também permite a criação de instâncias EC2 com 
+diversas configurações de tipo de armazenamento.
+
+## Amazon EBS
+
+O Amazon EBS é um serviço de armazenamento em bloco que pode ser utilizado para armazenar dados de instâncias EC2. O EBS é 
+altamente escalável e pode ser utilizado para armazenar dados de forma persistente. Além disso, esse também permite a criação de
+snapshots, que são cópias de segurança dos dados armazenados no próprio EBS, podendo serem utilizadas para restaurar os dados
+armazenados em caso de falha ou perda de dados.
+
+## Amazon EFS
+
+O Amazon EFS é um serviço de armazenamento em arquivos que pode ser utilizado para armazenar dados de instâncias EC2. O EFS é
+altamente escalável e pode ser utilizado para armazenar dados de forma persistente, podem comportar até petabytes de dados.
