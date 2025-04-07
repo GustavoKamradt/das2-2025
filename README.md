@@ -242,3 +242,31 @@ armazenados em caso de falha ou perda de dados.
 
 O Amazon EFS é um serviço de armazenamento em arquivos que pode ser utilizado para armazenar dados de instâncias EC2. O EFS é
 altamente escalável e pode ser utilizado para armazenar dados de forma persistente, podem comportar até petabytes de dados.
+
+# AULA 07/04/25
+
+## Amazon EBS
+
+O Amazon EBS é um serviço de armazenamento em bloco que pode ser utilizado para armazenar dados de instâncias EC2. Essa forma de
+armazenamento não perde os dados do EC2, mesmo que a instância seja parada ou encerrada, sendo ideal para armazenar dados que
+devem se manter persistentes.
+
+## Amazon user data best practices
+
+- Instanciar scripts manualmente, ao invés de automatizar o processo.
+- Quando iniciado uma EC2 é possível escolher qual usuários vai executar o ‘script’, o que pode servir para evitar
+  que o ‘script’ seja executado por um usuário não autorizado.
+
+## Placement Strategies
+
+- Cluster placement group: Coloca as instâncias num grupo de ‘cluster’, o que pode melhorar a latência entre as instâncias, mas pode ser mais prejudicial caso aconteça acidentes.
+- Spread placement group: Coloca as instâncias em diferentes racks, o que pode melhorar a disponibilidade, caso seja necessário para programa que não devem cair.
+- Partition placement group: Coloca as instâncias em diferentes partições, o que pode melhorar a disponibilidade.
+
+## EC2 pricing
+
+- On-demand: paga-se por hora, o que pode ser mais caro, mas é ideal para aplicações que não são utilizadas com frequência, como aplicações experimentais.
+- Reserved: paga-se por um ano ou 3 anos, o que pode ser mais barato do que o On-demand, dependendo da aplicação que for ser usada.
+- Savings plan: Paga-se por hora, é eficiente para aplicação com taxa de acessos bastante volátil, mas serve bem para qualquer tipo de aplicação.
+- Spot: Paga-se por hora, e é o melhor custo beneficio para executar containers, devido aos generosos descontos.
+
