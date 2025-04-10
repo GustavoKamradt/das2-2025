@@ -270,3 +270,24 @@ devem se manter persistentes.
 - Savings plan: Paga-se por hora, é eficiente para aplicação com taxa de acessos bastante volátil, mas serve bem para qualquer tipo de aplicação.
 - Spot: Paga-se por hora, e é o melhor custo beneficio para executar containers, devido aos generosos descontos.
 
+# Aula 10/04/25
+
+## Database
+
+pontos a se considerar na hora de escolher um banco de dados:
+- escalabilidade
+- tamanho do armazenamento
+- caraterísticas do banco de dados (latência, disponibilidade, etc.)
+- durabilidade
+
+### Banco de dados relacional x não relacional
+
+- Relacional: mais fácil de trabalhar, mas menos escalável e possui a sua estrutura de dados restrita a tabelas.
+- Não relacional: mais difícil de trabalhar, porém muito mais escalável, mais rapido e tem uma grande variedade de estruturas de dados.
+
+## AMAZON Database options
+
+- Amazon RDS: banco de dados relacional mais utilizado na AWS.
+- Amazon Aurora: banco de dados relacional mais rápido da AWS. Aurora serveless é uma versão do Aurora que pode ser escalada automaticamente.
+- Amazon DynamoDB: banco de dados não relacional mais escalável da AWS.
+- Amazon ElastiCache: banco de dados não relacional mais barato da AWS.
