@@ -291,3 +291,38 @@ pontos a se considerar na hora de escolher um banco de dados:
 - Amazon Aurora: banco de dados relacional mais rápido da AWS. Aurora serveless é uma versão do Aurora que pode ser escalada automaticamente.
 - Amazon DynamoDB: banco de dados não relacional mais escalável da AWS.
 - Amazon ElastiCache: banco de dados não relacional mais barato da AWS.
+
+# AULA 17/04/25
+
+## Backup e recuperação de dados com o Amazon RDS
+
+- Chaves de criptografia: são utilizadas para criptógrafar os dados armazenados no banco de dados, garantindo a segurança dos dados. 
+podendo encriptar dados via AWS KMS ou AWS CloudHSM, dependendo do tipo de banco de dados utilizado.
+
+## AMAZON dynamoDB
+
+O Amazon DynamoDB é um banco de dados não relacional que pode ser utilizado para armazenar dados de forma escalável e rápida. 
+Esse também possui o Amazon DynamoDB streams, que é um serviço que permite a captura de alterações em tempo real nos dados armazenados no DynamoDB.
+A segurança aplicada nesse serviço é feita por meio de chaves de criptografia, utilizadas para criptógrafar os dados armazenados no banco de dados, garantindo a segurança dos dados.
+
+A estrutura de dados do DynamoDB é baseada em tabelas, onde cada tabela possui uma Sort key e uma Partition key. A Sort key é utilizada para ordenar os dados armazenados na tabela,
+enquanto a Partition key é utilizada para particionar os dados armazenados na tabela.
+
+### Casos de Usos
+
+- Aplicações ‘web’: O DynamoDB pode ser utilizado para armazenar dados de aplicações ‘web’, como dados de usuários, produtos, etc.
+- Aplicações móveis: O DynamoDB pode ser utilizado para armazenar dados de aplicações móveis, como dados de usuários, produtos, etc.
+- Aplicações IoT: O DynamoDB pode ser utilizado para armazenar dados de aplicações IoT, como dados de sensores, dispositivos, etc.
+
+## AMAZON Redshift
+
+O Amazon Redshift é um banco de dados relacional feito para warehousing de dados, que pode ser utilizado para armazenar dados de forma escalável e rápida. 
+Esse também possui o Amazon Redshift Spectrum, que é um serviço que permite a consulta de dados armazenados no Amazon S3, utilizando o Amazon Redshift.
+
+## Purpose-built databases
+
+- Amazon KeySpaces: banco de dados para uso de Cassandra.
+- Amazon MemoryDB: banco de dados para uso de cache.
+- Amazon Neptune: banco de dados para uso de grafos.
+- Amazon Timestream: banco de dados para uso temporal.
+- Amazon QLDB: banco de dados para uso de ledger, possui characteristics de blockchain como a imutabilidade dos dados.
