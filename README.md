@@ -326,3 +326,21 @@ Esse também possui o Amazon Redshift Spectrum, que é um serviço que permite a
 - Amazon Neptune: banco de dados para uso de grafos.
 - Amazon Timestream: banco de dados para uso temporal.
 - Amazon QLDB: banco de dados para uso de ledger, possui characteristics de blockchain como a imutabilidade dos dados.
+
+# Aula 05/05/25
+
+## VPC
+
+VPC ou Virtual private cloud é um serviço que permite a criação de uma rede privada na AWS, onde é possível criar sub-redes, 
+definir regras de segurança e conectar-se a outras redes. A VPC é utilizada para isolar os recursos da AWS, garantindo a 
+segurança e a privacidade dos dados armazenados na nuvem, considerando que dentro dessas sub-redes, é possível criar
+instâncias EC2, bancos de dados e outras serviços de forma interna a VPC.
+
+A VPC permite a criação de subnets, onde é possível segregar uma rede maior em várias redes, tornando-as mais seguras e
+facilitando a gestão de recursos. Sendo essas sub-redes representadas por CIDR, que é uma forma de representar endereços 
+IP e as suas respetivas máscaras de sub-rede.
+
+Existem Duas categorias de sub-redes: as públicas e as privadas:
+- Publicas: podem ser acessadas pela internet, ou seja, possuem um gateway de internet associado a elas.
+- Privadas: não podem ser acessadas pela internet, ou seja, não possuem um gateway de internet associado a elas.
+
