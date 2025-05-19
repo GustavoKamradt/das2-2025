@@ -405,6 +405,40 @@ pode ser acessado pela internet.
 
 - Gateway load balancer: é um balanceador de carga utilizado para distribuir o tráfego entre as instâncias EC2 dentro da
   VPC.
+- 
 - VPC flow logs: é um serviço utilizado para registrar o tráfego de entrada e saída das instâncias EC2 dentro da VPC.
   Esses logs podem ser utilizados para auditoria e análise de segurança.
-- 
+
+# AULA 19/05/25
+
+## Design de redes com multiplos VPCs
+
+- Full mesh architecture: é uma arquitetura de rede onde todas as VPCs estão conectadas entre si, permitindo a comunicação entre
+todas as VPCs.
+- Hub and spoke architecture: é uma arquitetura de rede onde uma VPC central (hub) está conectada a várias VPCs (spokes), interligando-as
+entre si. Essa arquitetura é mais escalável e fácil de gerir do que a full mesh architecture, pois permite a comunicação entre as VPCs
+sem a necessidade de criar conexões diretas entre todas as VPCs.
+
+## AWS Transit Gateway
+
+O AWS Transit Gateway é um serviço que permite a conexão de várias VPCs e redes locais, facilitando a
+comunicação entre elas. Esse serviço é muito versátil para todo o tipo de aplicação, pois o seu custo está relacionado ao 
+tráfego de dados, o que pode ser vantajoso para aplicações com tráfego de dados variável.
+
+## VPC Peering
+
+O VPC Peering é um serviço que permite a conexão de duas VPCs, permitindo a comunicação entre elas. Serviço muito útil para
+aplicações que precisam de comunicação entre VPCs, mas não é tão escalável quanto o AWS Transit Gateway, pois não permite a
+conexão de várias VPCs numa única rede.
+
+## AWS site-to-site VPN
+
+O AWS site-to-site VPN é um serviço que cria uma conexão segura entre a VPC e a rede local, permitindo a comunicação entre elas. 
+é possível ligar diversas redes 'on-premises' a uma VPC, mas o custo é elevado, pois o tráfego de dados é cobrado por hora.
+
+## AWS Direct Connect
+
+O AWs Direct Connect gera uma VLAN que inclui redes 'on-premises' a fim de incluir recursos AWS dentro da rede. Esse serviço gera uma
+conexão segura e previsível em termos de latência, o que pode ser vantajoso para aplicações que precisam de comunicação consistentes
+entre VPCs e redes locais.
+
