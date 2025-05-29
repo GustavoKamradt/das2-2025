@@ -442,3 +442,13 @@ O AWs Direct Connect gera uma VLAN que inclui redes 'on-premises' a fim de inclu
 conexão segura e previsível em termos de latência, o que pode ser vantajoso para aplicações que precisam de comunicação consistentes
 entre VPCs e redes locais.
 
+# Aula 26/05/25
+
+## Gerindo Permissões de rede
+
+Associar permissões a usuários diretamente é uma prática cabível, pelo menos quando o número de usuários é baixo.
+
+
+
+
+
