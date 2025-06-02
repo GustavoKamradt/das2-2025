@@ -448,7 +448,38 @@ entre VPCs e redes locais.
 
 Associar permissões a usuários diretamente é uma prática cabível, pelo menos quando o número de usuários é baixo.
 
+# Aula 29/05/25
 
+## AWS Cognito
 
+É um serviço que permite a autenticação de usuarios em aplicações, facilitando gestão de usuários e a segurança das aplicações.
+Esse permite a criação de pools de usuários, onde é possível definir regras de autenticação, como a utilização de
+MFA (Multi-Factor Authentication) e a definição de políticas de senha. Também suporta autenticação via sites externos, como
+Google, Facebook e Amazon.
 
+Padrões comuns de separação de acesso a recursos:
+- Unica conta AWS: é uma conta única que possui todos os recursos e usuários, o que pode ser mais fácil de gerir, mas menos seguro.
+- Multiplas contas AWS: é uma arquitetura que separa funções e recursos em contas diferentes, o que pode ser mais seguro, mas mais difícil de gerir.
+
+## AWS Organizations
+
+O AWS Organizations permite gerir várias contas AWS de forma centralizada, facilitando a gestão de usuários e recursos. É necessário 
+escolher uma conta root que será a conta principal, onde serão criadas as contas filhas, separando funções e permissões entre elas. 
+Isso pode ser vantajoso para aplicações que precisam de segurança.
+
+As Service Control Policies (SCPs) são políticas que podem ser aplicadas a contas filhas, definindo quais serviços e recursos podem ser utilizados por elas.
+
+## AWS WAF
+
+O AWS WAF (Web Application Firewall) é um serviço que protege aplicações web contra ataques comuns, como SQL Injection e Cross-Site Scripting (XSS).
+Esse serviço permite a criação de regras personalizadas para bloquear ou permitir tráfego, além de fornecer relatórios detalhados sobre o tráfego da aplicação.
+Por exemplo, é possivel criar regras que bloqueiama Tráfego de IPs de regiões específicas, ou que bloqueiem tráfego de usuários que tentam acessar URLs específicas.
+
+## AWS Inspector
+
+O AWS Inspector é um serviço responsável por analisar a segurança de aplicações, identificando vulnerabilidades e fornecendo recomendações para mitigação.
+
+## AWS Security Hub
+
+O AWS Security Hub é um serviço que apresenta uma visão geral de segurança da conta AWS, apresentando alertas e recomendações de segurança. 
 
