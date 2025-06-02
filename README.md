@@ -483,3 +483,23 @@ O AWS Inspector é um serviço responsável por analisar a segurança de aplica�
 
 O AWS Security Hub é um serviço que apresenta uma visão geral de segurança da conta AWS, apresentando alertas e recomendações de segurança. 
 
+# Aula 02/06/25
+
+## Monitoramento da aplicação
+
+O primeiro passo a se seguir para alcançar a alta disponibilidade é o monitoramento. O Segundo passo é a utilização de recursos, 
+o Terceiro passo é a automação e o quarto passo é a Segurança.
+
+## AWS CloudWatch
+
+O AWS CloudWatch é um serviço que permite monitorar recursos e aplicações na AWS, coletando métricas e logs. Esse serviço é muito útil para 
+aplicações que precisam de monitoramento em tempo real, pois permite a criação de alarmes e notificações para eventos específicos, como a utilização 
+excessiva de recursos ou a falha de uma instância EC2.
+
+- Nota: Memoria utilizada não é uma métrica padrão do CloudWatch, caso contrario seria uma violação de privacidade do cliente, embora ainda seja possível
+  coletar essa métrica através das métricas personalizados.
+
+- Nota: É possível configurar alertas para serem enviados por e-mail, SMS ou SNS (Simple Notification Service), caso alguma metrica ultrapasse um limite definido.
+
+- Nota: É possível criar métricas automática com base em logs como, por exemplo, criar uma métrica que conte o número de erros em um log específico.
+
