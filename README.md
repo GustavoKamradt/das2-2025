@@ -503,3 +503,40 @@ excessiva de recursos ou a falha de uma instância EC2.
 
 - Nota: É possível criar métricas automática com base em logs como, por exemplo, criar uma métrica que conte o número de erros em um log específico.
 
+# Aula 05/06/25
+
+## Amazon EC2 Auto Scaling
+
+- Predictive policy: prevê mudanças de escalabilidade de acordo com tráfego de dados, ajudando a rede a se adaptar às mudanças de demanda.
+- Scheduled policy: permite definir horários específicos para aumentar ou diminuir a capacidade da aplicação.
+- Target tracking policy: permite definir uma métrica específica para monitorar a capacidade da aplicação.
+
+## AWS Elastic Load Balancing
+
+O AWS Elastic Load Balancing é um serviço que distribui o tráfego de rede entre várias instâncias EC2, garantindo alta disponibilidade e escalabilidade da aplicação.
+Esse serviço é muito útil para aplicações que precisam de balanceamento de carga, pois permite distribuir o tráfego entre várias instâncias EC2, evitando sobrecarga 
+em uma única instância.
+
+# Aula 16/06/25
+
+## Scaling AWS  Database 
+
+- Amazon RDS Auto Scaling: permite aumentar ou diminuir a capacidade do banco de dados de forma automática, garantindo alta disponibilidade e escalabilidade da aplicação.
+
+### Escalando Aurora Cluster
+- A sincronização é feita pelo cluster de volume, não por rede, tornando a escalabilidade mais rápida e eficiente.
+- A escalabilidade é feita por meio de réplicas de leitura, que podem ser adicionadas ou removidas de forma automática, garantindo alta disponibilidade e escalabilidade da aplicação.
+
+## Tipos de AWS load balancer
+
+- Application Load Balancer (ALB): permite o balanceamento de carga baseado em conteúdo, como URLs e cabeçalhos HTTP.
+- Network Load Balancer (NLB): permite o balanceamento de carga baseado em IP e porta.
+- Gateway Load Balancer (GWLB): permite a integração de serviços de segurança, como firewalls e sistemas de detecção de intrusões, na rede.
+- Classic Load Balancer (CLB): permite o balanceamento de carga baseado em IP e porta, mas não possui recursos avançados como o ALB e o NLB.
+
+Alb e NLB são mais comuns, pois são mais flexíveis e escaláveis. Os demais são mais específicos para casos de uso específicos.
+
+## Multi Region Fallover
+
+O Multi Region Fallover é uma estratégia de alta disponibilidade que permite que a aplicação continue funcionando mesmo em caso de falha em uma região específica da AWS. 
+isso é implementada por meio de replicação de dados entre regiões, garantindo que os dados estejam disponíveis em caso de falha.
