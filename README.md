@@ -540,3 +540,23 @@ Alb e NLB são mais comuns, pois são mais flexíveis e escaláveis. Os demais s
 
 O Multi Region Fallover é uma estratégia de alta disponibilidade que permite que a aplicação continue funcionando mesmo em caso de falha em uma região específica da AWS. 
 isso é implementada por meio de replicação de dados entre regiões, garantindo que os dados estejam disponíveis em caso de falha.
+
+# Aula 23/06/25
+
+## CloudFormation
+
+CloudFormation é serviço de modelagem de recursos declarativa e automatizada, o que permite o usuário criar uma infraestrutura em um modelo Json ou Yaml,
+evitando assim a atraso de realizar essa tarefa manualmente.
+
+Também possui funções de gerenciamento de dependências e reutilização de código, muito uteis para padronização de projetos 
+
+O Quick start é um modelo com CloudFormation templates pré configurados, sendo usado para acelerar ainda mais o fluxo de trabalho de um projeto.
+
+## Caching content
+
+Usado principalmente para resolver consultas custosas ao banco de dados ou consultas muito usadas. Reduzindo A latência dessas consultas a depender do método utilizado.
+
+### CloudFront
+
+O CloudFront é uma CDN que armazena cópias do seu conteúdo em "pontos de presença", também conhecidos como "edge locations", espalhados pelo mundo.
+Quando um usuário solicita o conteúdo, ele é entregue do Edge Location mais próximo, minimizando a latência.
